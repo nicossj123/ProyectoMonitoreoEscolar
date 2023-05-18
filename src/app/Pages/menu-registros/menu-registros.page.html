@@ -1,0 +1,59 @@
+<ion-header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Erica+One&family=Montserrat:wght@500&family=Roboto&family=Silkscreen&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="izquierda"><img src="assets/imagenes/logo_liceo.jpg" alt="logo_liceo" id="logo_liceo"></div>
+        </ion-col>
+        <ion-col size="8">
+          <div class="derecha"><h1><b>Liceo industrial de miraflores alto</b></h1></div> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="6" size-md="4">
+        <ion-card button (click)="clickNotas()">
+          <ion-card-content>
+            <ion-icon name="clipboard-outline"></ion-icon>
+            <ion-card-title><b>Registro de notas</b></ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="6" size-md="4">
+        <ion-card button (click)="clickAsistencia()">
+          <ion-card-content>
+            <ion-icon name="calendar-outline"></ion-icon>
+            <ion-card-title><b>Registro de asistencia</b></ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="6" size-md="4">
+        <ion-card button (click)="clickAnotaciones()">
+          <ion-card-content>
+            <ion-icon name="id-card-outline"></ion-icon>
+            <ion-card-title><b>Registro de anotaciones</b></ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row id="fila_boton" #animar1>
+      <ion-col>
+        <ion-button size="default" class="custom"><b>Cerrar sesi&oacute;n</b></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Erica+One&family=Montserrat:wght@500&family=Roboto&family=Silkscreen&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="izquierda"><img src="assets/imagenes/logo_liceo.jpg" alt="logo_liceo" id="logo_liceo"></div>
+        </ion-col>
+        <ion-col size="8">
+          <div class="derecha"><h1><b>Liceo industrial de miraflores alto</b></h1></div> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="10" size="8">
+        <ion-card>
+          <img src="assets/imagenes/logo_liceo.jpg" alt="logo_carta" id="logo_carta">
+          <ion-card-header>
+            <ion-card-title id="titulo_carta"><b>Ingrese sus credenciales</b></ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">
+                  <ion-icon name="person-outline" slot="start"></ion-icon>
+                  Ingrese usuario
+                </ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>         
+            </ion-col>
+
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">
+                  <ion-icon name="key-outline" slot="start"></ion-icon>
+                  Ingrese contraseña
+                </ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>     
+            </ion-col>
+            <ion-row>
+              <ion-col>
+                <ion-button id="boton" [routerLink]="['/menu-registros']">Ingresar</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

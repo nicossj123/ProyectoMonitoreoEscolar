@@ -1,0 +1,58 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Erica+One&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@500&family=Silkscreen&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="izquierda"><img src="assets/imagenes/logo_liceo.jpg" alt="logo_liceo" id="logo_liceo"></div>
+        </ion-col>
+        <ion-col size="8">
+          <div class="derecha"><h1><b>Liceo industrial de miraflores alto</b></h1></div> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col id="columna-nombre">
+        <h1 class="custom">Nombre alumno</h1>
+        <h1 class="custom">Curso alumno</h1>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row id="fila-carta" class="ion-justify-content-center">
+      <ion-card class="custom">
+        <ion-card-header>
+          <ion-card-title>Notas</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row class="center">
+      <ion-col>
+        <ion-button size="default" class="custom" (click)="clickVolver()">Volver</ion-button>
+      </ion-col>
+      
+    </ion-row>
+
+
+
+
+
+
+  </ion-grid>
+</ion-content>

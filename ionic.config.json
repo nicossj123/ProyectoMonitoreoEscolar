@@ -1,0 +1,7 @@
+{
+  "name": "Monitoreo_escolar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
