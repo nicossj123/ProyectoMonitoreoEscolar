@@ -1,13 +1,76 @@
-<ion-header [translucent]="true">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Erica+One&family=Montserrat:wght@500&family=Roboto&family=Rubik:wght@500&family=Silkscreen&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<ion-header>
   <ion-toolbar>
-    <ion-title>registro-anotaciones</ion-title>
-  </ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="izquierda"><img src="assets/imagenes/logo_liceo.jpg" alt="logo_liceo" id="logo_liceo"></div>
+        </ion-col>
+        <ion-col size="8">
+          <div class="derecha"><h1><b>Liceo industrial de miraflores alto</b></h1></div> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  </ion-toolbar>  
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registro-anotaciones</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col id="columna-nombre">
+        <h1 class="custom">Nombre alumno</h1>
+        <hr>
+        <h1 class="custom">Curso alumno</h1>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row id="fila-carta" class="ion-justify-content-center">
+      <ion-card class="custom">
+        <ion-card-header>
+          <ion-card-title><h1 class="custom_titulo">Anotaciones</h1></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+          
+            
+              <ul>
+                <li *ngFor="let Observation of observaciones">
+                  <ion-card class="anotacion">
+                    <ion-card-content>
+                            <div><b>Profesor: </b>{{Observation.teacherName}}</div>
+                            <div><b>Observacion: </b>{{Observation.observationText}}</div>
+                            <div><b>Fecha: </b>{{Observation.observationDate | date: 'dd/MM/yyyy' }}</div>
+                           <ion-checkbox>Visto</ion-checkbox>
+                    </ion-card-content>
+                  </ion-card>
+                  
+                </li>
+              </ul>
+            
+          
+
+        </ion-card-content>
+       
+      </ion-card>
+    </ion-row>
+    <ion-row class="center">
+      <ion-col>
+        <ion-button size="default" class="custom" (click)="clickVolver()">Volver</ion-button>
+      </ion-col>
+      
+    </ion-row>
+
+
+
+
+
+
+  </ion-grid>
 </ion-content>
